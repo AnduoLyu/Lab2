@@ -29,8 +29,8 @@ data2 %>%
 # Assignment2 -------------------------------------------------------------
 
 
-data1 <- read.csv("coverage.csv")
-data2 <- read.csv("expenditures.csv")
+data1 <- read.csv("coverage.csv", skip = 2)
+data2 <- read.csv("expenditures.csv", skip = 2)
 data1 <- data1[1:52,]
 data2 <- data2[1:52,c(1,24,25)]
 
